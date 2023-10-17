@@ -82,6 +82,7 @@ for k = number_states
         configurations{i}.pca = pca_comp;
         configurations{i}.zeromean = 0; 
         configurations{i}.covtype = 'full';
+%         configurations{i}.useParallel = 0;
         i = i + 1;
     end
 end
@@ -93,6 +94,7 @@ for k = number_states
         configurations{i}.pca = pca_comp;
         configurations{i}.zeromean = 1; 
         configurations{i}.covtype = 'full';
+%         configurations{i}.useParallel = 0;
         i = i + 1;
     end
 end
@@ -104,6 +106,7 @@ for k = number_states
         configurations{i}.pca = pca_comp;
         configurations{i}.zeromean = 0; 
         configurations{i}.covtype = 'sharedfull';
+%         configurations{i}.useParallel = 0;
         i = i + 1;
     end
 end
